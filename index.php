@@ -28,8 +28,42 @@ charset=utf-8">
         echo "Olete piisavalt vana. Tulge edasi!";
         }
         ?>
+<?php $muutuja1 = 3; ?>
+<?php $muutuja2 = 3; ?>
+<?php $muutuja3 = 4; ?>
+<?php $muutuja4 = 5; ?>
 
+<?php
+ if ($muutuja3 > $muutuja4) {
+        echo "Muutuja 3 suurem kui m4";
+   } elseif ($muutuja1 = $muutuja2) {
+        echo "Kas esimene ja teine muutuja on võrdsed";
+    } 
+?> <br>
 
+<?php echo isset($nothing) ?><br>
+
+<?php
+
+	if (!isset($nothing)) {
+		echo "If on t6si";
+	}
+?>
+<h3> Switch </h3>
+
+<?php $current_language = 'ru';
+    switch($current_language) {
+      case 'et':
+    echo "Tere! Kuidas sul läheb?";
+      break;
+      case 'ru':
+    echo "Здравствуйте! Как вы делаете?";
+      break;  
+      case 'fi':
+    echo "Hei! Miten menee?";
+      break;
+    }
+    ?>
 
 </body>
 </html>
